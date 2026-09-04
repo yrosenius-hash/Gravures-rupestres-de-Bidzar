@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Musée virtuel – Gravures de Bidzar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu principal -->
+  <header>
+    <h1>Musée virtuel des gravures rupestres de Bidzar</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#methodologie">Méthodologie</a></li>
+        <li><a href="#musee">Musée virtuel</a></li>
+        <li><a href="#videos">Vidéos</a></li>
+        <li><a href="#archives">Archives</a></li>
+        <li><a href="#questionnaire">Questionnaire</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Accueil -->
+  <section id="accueil">
+    <h2>Accueil</h2>
+    <p>[Texte de présentation du projet – déjà disponible]</p>
+  </section>
+
+  <!-- Méthodologie -->
+  <section id="methodologie">
+    <h2>Méthodologie numérique frugale</h2>
+    <p>[Texte méthodologie – déjà disponible]</p>
+  </section>
+
+  <!-- Musée virtuel -->
+  <section id="musee">
+    <h2>Musée virtuel</h2>
+    <p>Explorez les gravures en photo, 3D et RTI.</p>
+    <!-- Exemple Dalle 1 -->
+    <div class="dalle">
+      <h3>Dalle 1</h3>
+      <img src="images/dalle1.jpg" alt="Photo Dalle 1">
+      <canvas id="scene3d-dalle1"></canvas>
+      <button onclick="loadRTI('data/dalle1.json', [
+        'data/dalle1_1.jpg','data/dalle1_2.jpg','data/dalle1_3.jpg','data/dalle1_4.jpg'
+      ])">Voir RTI Dalle 1</button>
+      <p><a href="https://app.kiriengine.com/viewer/dalle1" target="_blank">Voir sur KIRI Engine</a></p>
+    </div>
+  </section>
+
+  <!-- Vidéos -->
+  <section id="videos">
+    <h2>Témoignages vidéo</h2>
+    <video controls width="600">
+      <source src="videos/chef_traditionnel.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- Archives -->
+  <section id="archives">
+    <h2>Archives</h2>
+    <ul>
+      <li><a href="archive/protocole.pdf">Protocole numérisé</a></li>
+    </ul>
+  </section>
+
+  <!-- Questionnaire -->
+  <section id="questionnaire">
+    <h2>Questionnaire</h2>
+    <form>
+      <label for="avis">Votre avis :</label><br>
+      <textarea id="avis" name="avis" rows="4" cols="50"></textarea><br>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Auteur : YANGKA Rosenius – Université de Garoua</p>
+  </footer>
+
+  <script src="scripts/rti-viewer.js"></script>
+</body>
+</html>
