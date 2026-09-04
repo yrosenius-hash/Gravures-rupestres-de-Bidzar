@@ -1,0 +1,42 @@
+/* Style archéologie / patrimoine */
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  background: #f4f1e9; /* ton sable */
+  color: #2c2c2c;      /* gris pierre */
+}
+
+header {
+  background: #5a3e2b; /* brun terre */
+  color: #f4f1e9;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  padding: 0;
+}
+
+nav a {
+  color: #f4f1e9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2em;
+  border-bottom: 1px solid #ccc;
+}
+
+h2 {
+  color: #5a3e2b;
+}
+
+footer {
+  background: #ddd0b8; /* beige clair */
+  text-align: center;
+  padding: 1em;
+  font-style: italic;
+}
